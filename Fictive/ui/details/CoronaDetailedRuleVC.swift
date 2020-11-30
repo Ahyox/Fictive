@@ -21,11 +21,12 @@ class CoronaDetailedRuleVC: UIViewController, UITableViewDataSource, UITableView
     let greenLightRulesIcons = ["circle_face", "circle_event", "circle_mask"]
     let yellowLightRulesIcons = ["circle_event", "circle_mask", "circle_curfew"]
     let redLightRulesIcons = ["circle_event", "circle_mask", "circle_curfew"]
+    let darkRedLightRulesIcons = ["circle_event", "circle_clock"]
     
     var groupedRuleIcons = [[String]]()
     
     
-    let coronaLights = ["green_notify.png", "yellow_notify.png", "red_notify.png"]
+    let coronaLights = ["green_notify.png", "yellow_notify.png", "red_notify.png", "dark_red_notify.png"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +53,7 @@ class CoronaDetailedRuleVC: UIViewController, UITableViewDataSource, UITableView
         groupedRuleIcons.append(greenLightRulesIcons)
         groupedRuleIcons.append(yellowLightRulesIcons)
         groupedRuleIcons.append(redLightRulesIcons)
+        groupedRuleIcons.append(darkRedLightRulesIcons)
         
         let currentCaseState = coronaChecker.check()
         statusIcon.image = UIImage(named: coronaLights[currentCaseState - 1])

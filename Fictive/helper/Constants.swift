@@ -20,6 +20,8 @@ let REPEAT_TIME_IN_SEC:Double = 600 //10 * 60
 let GREEN_LIGHT = 1
 let YELLOW_LIGHT = 2
 let RED_LIGHT = 3
+let DARK_RED_LIGHT = 4
+
 
 let BASE_URL = "https://services7.arcgis.com/"
 let FEATURE_SERVIEC_QUERY_PATH = "mOBPykOjAyBO2ZKk/arcgis/rest/services/RKI_Landkreisdaten/FeatureServer/0/query?"

@@ -22,8 +22,12 @@ class CoronaRuleUtil {
         } else if feature.attributes.cases7Per100k >= 35 && feature.attributes.cases7Per100k <= 50 {
             //YELLOW Light
             return YELLOW_LIGHT
-        } else {
+        } else if feature.attributes.cases7Per100k > 50 && feature.attributes.cases7Per100k <= 100 {
+            //RED Light
             return RED_LIGHT
+        } else {
+            //DARK RED Light
+            return DARK_RED_LIGHT
         }
     }
     
@@ -33,8 +37,10 @@ class CoronaRuleUtil {
             return LanguageManager.getGreenLightRules()
         case YELLOW_LIGHT:
             return LanguageManager.getYellowLightRules()
-        default:
+        case RED_LIGHT:
             return LanguageManager.getRedLightRules()
+        default:
+            return LanguageManager.getDarkRedLightRules()
         }
     }
 }

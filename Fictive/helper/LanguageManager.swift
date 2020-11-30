@@ -84,6 +84,14 @@ class LanguageManager : NSObject {
         return rules
     }
     
+    class func getDarkRedLightRules() -> [String] {
+        var rules = [String]()
+        
+        rules.append(NSLocalizedString("redDarkLightText1", comment: ""))
+        rules.append(NSLocalizedString("redDarkLightText2", comment: ""))
+        return rules
+    }
+    
     class func getDefaultLocationTitle() -> String {
         return NSLocalizedString("defaultNotificationTitle", comment: "Location default title")
     }
