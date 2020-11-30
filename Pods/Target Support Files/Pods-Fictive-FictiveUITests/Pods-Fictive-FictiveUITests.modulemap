@@ -1,0 +1,6 @@
+framework module Pods_Fictive_FictiveUITests {
+  umbrella header "Pods-Fictive-FictiveUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

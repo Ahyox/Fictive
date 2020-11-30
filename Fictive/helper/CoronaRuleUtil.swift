@@ -1,0 +1,40 @@
+//
+//  CoronaRuleChecker.swift
+//  Fictive
+//
+//  Created by Prof Ahyox on 29/11/2020.
+//
+
+import Foundation
+
+class CoronaRuleUtil {
+    var feature:Features!
+    
+    init(feature:Features) {
+        self.feature = feature
+    }
+    
+    func check() -> Int {
+        AppUtility.debugMessage(message: "\(feature.attributes.cases7Per100k)")
+        if feature.attributes.cases7Per100k < 35 {
+            //GREEN Light
+            return GREEN_LIGHT
+        } else if feature.attributes.cases7Per100k >= 35 && feature.attributes.cases7Per100k <= 50 {
+            //YELLOW Light
+            return YELLOW_LIGHT
+        } else {
+            return RED_LIGHT
+        }
+    }
+    
+    func getRules(state:Int) -> [String] {
+        switch state {
+        case GREEN_LIGHT:
+            return LanguageManager.getGreenLightRules()
+        case YELLOW_LIGHT:
+            return LanguageManager.getYellowLightRules()
+        default:
+            return LanguageManager.getRedLightRules()
+        }
+    }
+}

@@ -1,0 +1,52 @@
+/* 
+  Localizable.strings
+  Fictive
+
+  Created by Prof Ahyox on 18/11/2020.
+  
+*/
+
+"error" = "Error";
+
+"errorMessage" = "Oops an unknown error just occurred, please try again";
+
+"importantNote" = "Keep your distance, wear a mask, wash your hands, air rooms regularly";
+
+"pullToRefresh"="Pull to refresh";
+
+"searchHint"="Search by Bundesland";
+
+"info"="Information";
+
+"countyAlertMessage"="We are about saving this county as yours. You will be notified in case of any changes in the future. Should we proceed?";
+
+"yesLabel"="Yes";
+
+"noLabel"="No";
+
+"statusHint"="Below are the rules applied at you county";
+
+"notificationGranted"="Yaay! we can now notify you of any changes that happens within your county preaventure you've already selected your current county";
+
+"notificationRefused"="Oops! To be able to get notified of the current changes happening around your county, you will have to go to settings and enable notification for Fivtive.";
+
+"greenLightText1"="Limitations of face-to-face contact in public spaces.";
+
+"greenLightText2"="Private events ( i.e. weddings etc. ) with a maximum of 100 participants in closed spaces and a maximum of 200 participants in the open.";
+
+"greenLightText3"="Wearing a mask is mandatory when ( including, but not limited to ) using public transportation, going shopping, eating and drinking in restaurants, bars, etc. and in case minimum distance (1.5m ) cannot be kept.";
+
+"yellowLightText1"="Private parties and contacts: no more than two households or ten people";
+
+"yellowLightText2"="Wearing a mask is mandatory in heavily frequented spaces, in pedestrian zones, in public buildings, in secondary schools during class, in universities, for attendees of ( sports ) events, etc.";
+
+"yellowLightText3"="Curfew and ban on selling as well as consuming alcohol in public spaces from 23:00 on";
+
+
+"redLightText1"="Private parties and contacts: no more than 5 households or five people";
+
+"redLightText2"="Wearing a mask is mandatory in heavily frequented spaces, in pedestrian zones, in public buildings, for all grades during class, in universities, for attendees of ( sports ) events, etc.";
+
+"redLightText3"="Curfew and ban on selling as well as consuming alcohol in public spaces from 22:00 on";
+
+"defaultNotificationTitle"="New change rule at your county";
